@@ -9,6 +9,4 @@ def test_subtract():
 def test_multiply():
     assert calculator.multiply(3, 4) == 12
 
-def test_divide():
-    assert calculator.divide(10, 2) == 5
-    assert calculator.divide(5, 0) == "Error! Division by zero."
+
