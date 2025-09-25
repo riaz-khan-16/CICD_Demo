@@ -1,14 +1,29 @@
+1. Write your test code
+
+2. run tests locally
+
 how to run tests locally:
 
-way 1: go to command promt and run:
-pytest
+        way 1: go to command promt and run:
+        pytest
 
-or pytest -v
+        or pytest -v
 
-you need to rename the test file like: test_<originalfilename>
+        you need to rename the test file like: test_<originalfilename>
 
-way 2: go to prompt and run:
+        way 2: go to prompt and run:
 
-pytest test_file_name.py
+        pytest test_file_name.py
+
+3. push in github
+
+4. Write your yml file to define work flow
+
+    steps:
+    1. make a folder .github\workflows\
+    2. make a file ci.yaml
+    3. Define jobs there
+
+
 
 
