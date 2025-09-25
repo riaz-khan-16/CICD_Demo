@@ -1,0 +1,22 @@
+name: Calculator CI
+
+on: [push, pull_request]   # Run on every push or PR
+
+jobs:
+  test:
+    runs-on: ubuntu-latest   # Use Linux runner
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install pytest
+
+      - name: Run tests
+        run: pytest
