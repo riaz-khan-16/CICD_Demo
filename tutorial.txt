@@ -1,0 +1,14 @@
+how to run tests locally:
+
+way 1: go to command promt and run:
+pytest
+
+or pytest -v
+
+you need to rename the test file like: test_<originalfilename>
+
+way 2: go to prompt and run:
+
+pytest test_file_name.py
+
+
