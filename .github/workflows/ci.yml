@@ -22,11 +22,14 @@ jobs:
         run: pytest
 
   deploy:
-    needs: test   # Run deploy only if tests pass
+    needs: test
     runs-on: ubuntu-latest
 
     steps:
-    - name: Trigger Render Deploy
-      run: |
-        curl -X POST "$RENDER_DEPLOY_HOOK"
+        - name: Trigger Render Deploy
+          run: |
+            curl -X POST "$RENDER_DEPLOY_HOOK"
+          env:
+            RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
+
 
